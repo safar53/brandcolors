@@ -5,7 +5,7 @@ import ClipboardButton from 'react-clipboard.js'
 
 const Brand = ({ brand }) => {
 
-    const {selectedBrands, setSelectedBrands, setCopied} = useContext(MainContext)
+    const { selectedBrands, setSelectedBrands, setCopied } = useContext(MainContext)
 
     const toggleSelected = () => {
         if (selectedBrands.includes(brand.slug)) {
@@ -30,7 +30,6 @@ const Brand = ({ brand }) => {
                 ))}
             </div>
         </div>
-
     )
 }
 
