@@ -1,13 +1,12 @@
 {
   "name": "brand-color",
+  "homepage": "https://safar53.github.io/brandcolors/",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://safar53.github.io/brandcolors/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-clipboard.js": "^2.0.16",
     "react-content-loader": "^6.0.3",
@@ -46,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
