@@ -28,7 +28,7 @@ function App() {
   useEffect(() => {
     const timeOut = setTimeout(() => {
       setCopied(false)
-    }, 1000)
+    }, 155000)
     return () => {
       clearTimeout(timeOut)
     }
@@ -59,9 +59,6 @@ function App() {
         <Router>
           <Switch>
             <Route path="/" exact>
-              <Content />
-            </Route>
-            <Route path="/brandcolors" exact>
               <Content />
             </Route>
             <Route path="/collection/:slugs">

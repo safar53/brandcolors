@@ -2,22 +2,20 @@ import { useContext } from 'react';
 import Search from './Search';
 import Brand from './Brand';
 import Download from './Download';
-import Loader from './Loader';
 import MainContext from '../MainContext';
 import { List, AutoSizer } from 'react-virtualized';
 
 const Content = () => {
 
     const { brands, selectedBrands } = useContext(MainContext)
-    const rowRenderer = ({ key, index, style, isScrolling }) => {
-        const content = isScrolling ? <Loader /> : <Brand brand={brands[index]} />;
+
+    const rowRenderer = ({ key, index, style, isScrolling, isVisible }) => {
         return (
             <div style={style} key={key}>
-                {content}
+                <Brand brand={brands[index]} />
             </div>
         )
     }
-
 
     return (
         <main className="content">

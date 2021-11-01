@@ -12,9 +12,10 @@ const Collection = () => {
 
     const { slugs } = useParams()
     const history = useHistory()
-    const { selectedBrands, setSelectedBrands, brands } = useContext(MainContext)
+    const { selectedBrands, setSelectedBrands, setSearch, brands } = useContext(MainContext)
     const clearSelectedBrands = () => {
         setSelectedBrands([])
+        setSearch('')
         history.push("/")
     }
 
@@ -25,7 +26,7 @@ const Collection = () => {
     return (
         <main className="content">
             <header className="header">
-                <Link to="/brandcolors" onClick={clearSelectedBrands}>
+                <Link to="/" onClick={clearSelectedBrands}>
                     <a className="back-btn">
                         <GrLinkPrevious />
                         All brands
