@@ -58,6 +58,9 @@ function App() {
         <Sidebar />
         <Router>
           <Switch>
+            <Route path="/" exact>
+              <Content />
+            </Route>
             <Route path="/brandcolors" exact>
               <Content />
             </Route>

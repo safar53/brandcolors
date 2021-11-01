@@ -26,9 +26,6 @@ const Content = () => {
                 {selectedBrands.length !== 0 && <Download />}
             </header>
             <section className="brands">
-                {/* {brands.map(brand => (
-                        <Brand brand={brand} />
-                ))} */}
                 <AutoSizer>
                     {({ height, width }) => (
                         <List

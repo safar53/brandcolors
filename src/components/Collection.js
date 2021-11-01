@@ -25,7 +25,7 @@ const Collection = () => {
     return (
         <main className="content">
             <header className="header">
-                <Link to="/" onClick={clearSelectedBrands}>
+                <Link to="/brandcolors" onClick={clearSelectedBrands}>
                     <a className="back-btn">
                         <GrLinkPrevious />
                         All brands
