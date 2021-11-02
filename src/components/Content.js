@@ -3,7 +3,8 @@ import Search from './Search';
 import Brand from './Brand';
 import Download from './Download';
 import MainContext from '../MainContext';
-import { List, AutoSizer } from 'react-virtualized';
+import LazyLoad from 'react-lazyload';
+import Loader from './Loader';
 
 const Content = () => {
 
@@ -24,17 +25,11 @@ const Content = () => {
                 {selectedBrands.length !== 0 && <Download />}
             </header>
             <section className="brands">
-                <AutoSizer>
-                    {({ height, width }) => (
-                        <List
-                            width={width}
-                            height={height}
-                            rowCount={brands.length}
-                            rowHeight={113}
-                            rowRenderer={rowRenderer}
-                        />
-                    )}
-                </AutoSizer>
+                {brands.map(brand => (
+                    <LazyLoad key={brand.slug} once="true" overflow="true" placeholder={<Loader />}>
+                        <Brand brand={brand} />
+                    </LazyLoad>
+                ))}
 
             </section>
         </main>
