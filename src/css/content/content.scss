@@ -102,8 +102,10 @@
       background-color: #fff;
       padding: 15px;
       margin-bottom: 10px;
+      overflow: hidden;
       &.selected {
         border-color: rgb(255, 0, 0);
+        overflow: hidden;
         .brand-colors {
           span {
             flex: 1;
