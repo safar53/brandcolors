@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 * {
@@ -20,7 +20,9 @@ code {
           box-sizing: border-box;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
 }
 
@@ -118,6 +120,13 @@ html, body, #root {
           flex: 1;
   height: 100%;
   overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .content .header {
@@ -217,7 +226,6 @@ html, body, #root {
   margin-right: 7px;
   padding-right: 0 15px;
   background-color: #eee;
-  border-radius: 4px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -266,7 +274,8 @@ html, body, #root {
 }
 
 .content .brands {
-  padding: 25px;
+  height: calc(100% - 60px);
+  width: 100%;
   background-color: #f8f8f8;
 }
 
@@ -274,7 +283,7 @@ html, body, #root {
   border: 1px solid #ddd;
   background-color: #fff;
   padding: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 10px 15px;
 }
 
 .content .brands .brand.selected {
@@ -329,5 +338,61 @@ html, body, #root {
   border-radius: 4px;
   font-size: 16px;
   padding: 15px 25px;
+}
+
+@media (max-width: 1000px) {
+  #root {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #root .sidebar {
+    width: 100%;
+    min-width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+  }
+  #root .sidebar .logo {
+    margin-bottom: 15px;
+  }
+  #root .sidebar .description {
+    font-size: 15px;
+  }
+  #root .content .header {
+    height: initial;
+    display: unset;
+    padding: 0 20px;
+  }
+  #root .content .header .search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #root .content .header .search .icon {
+    padding-left: 5px;
+    width: unset;
+  }
+  #root .content .header .search input {
+    padding: 5px 30px;
+    margin: 5px 2px;
+    border: 1px solid #ddd;
+  }
+  #root .content .header .download {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #root .content .brands .brand.selected .brand-colors span {
+    text-indent: -9999px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

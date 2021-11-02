@@ -1,14 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -22,7 +22,9 @@ code {
   box-sizing: border-box;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
 }
 
@@ -30,10 +32,10 @@ html, body, #root {
   display: flex;
 }
 
-@import 'sidebar/sidebar';
-@import 'content/content';
+@import "sidebar/sidebar";
+@import "content/content";
 
-@media(max-width: 1000px){
+@media (max-width: 1000px) {
   #root {
     flex-direction: column;
     .sidebar {
@@ -51,9 +53,26 @@ html, body, #root {
     }
     .content {
       .header {
-        height: 50px;
+        height: initial;
+        display: unset;
+        padding: 0 20px;
+        .search {
+          display: flex;
+          justify-content: center;
+          .icon {
+            padding-left: 5px;
+            width: unset;
+          }
+          input {
+            padding: 5px 30px;
+            margin: 5px 2px;
+            border: 1px solid #ddd;
+          }
+        }
         .download {
-          display: none;
+          padding: 0;
+          display: flex;
+          justify-content: center;
         }
       }
       .brands .brand.selected .brand-colors span {
@@ -62,4 +81,3 @@ html, body, #root {
     }
   }
 }
-
