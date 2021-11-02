@@ -28,7 +28,7 @@ function App() {
   useEffect(() => {
     const timeOut = setTimeout(() => {
       setCopied(false)
-    }, 155000)
+    }, 1000)
     return () => {
       clearTimeout(timeOut)
     }
