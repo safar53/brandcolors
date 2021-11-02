@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/brandcolors/static/css/main.dacc2af6.chunk.css",
+    "main.css": "/brandcolors/static/css/main.aa4d1904.chunk.css",
     "main.js": "/brandcolors/static/js/main.98f32f78.chunk.js",
     "main.js.map": "/brandcolors/static/js/main.98f32f78.chunk.js.map",
     "runtime-main.js": "/brandcolors/static/js/runtime-main.c6c6378d.js",
@@ -8,13 +8,13 @@
     "static/js/2.2d783e8f.chunk.js": "/brandcolors/static/js/2.2d783e8f.chunk.js",
     "static/js/2.2d783e8f.chunk.js.map": "/brandcolors/static/js/2.2d783e8f.chunk.js.map",
     "index.html": "/brandcolors/index.html",
-    "static/css/main.dacc2af6.chunk.css.map": "/brandcolors/static/css/main.dacc2af6.chunk.css.map",
+    "static/css/main.aa4d1904.chunk.css.map": "/brandcolors/static/css/main.aa4d1904.chunk.css.map",
     "static/js/2.2d783e8f.chunk.js.LICENSE.txt": "/brandcolors/static/js/2.2d783e8f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c6c6378d.js",
     "static/js/2.2d783e8f.chunk.js",
-    "static/css/main.dacc2af6.chunk.css",
+    "static/css/main.aa4d1904.chunk.css",
     "static/js/main.98f32f78.chunk.js"
   ]
 }
