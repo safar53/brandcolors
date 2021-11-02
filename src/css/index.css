@@ -120,13 +120,6 @@ body,
           flex: 1;
   height: 100%;
   overflow: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .content .header {
@@ -274,8 +267,7 @@ body,
 }
 
 .content .brands {
-  height: calc(100% - 60px);
-  width: 100%;
+  padding: 25px;
   background-color: #f8f8f8;
 }
 
@@ -283,7 +275,7 @@ body,
   border: 1px solid #ddd;
   background-color: #fff;
   padding: 15px;
-  margin-bottom: 10px 15px;
+  margin-bottom: 10px;
 }
 
 .content .brands .brand.selected {
@@ -294,7 +286,7 @@ body,
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  text-indent: unset;
+  text-indent: unset !important;
 }
 
 .content .brands .brand-colors {
@@ -362,8 +354,6 @@ body,
   }
   #root .content .header {
     height: initial;
-    display: unset;
-    padding: 0 20px;
   }
   #root .content .header .search {
     display: -webkit-box;
@@ -383,7 +373,7 @@ body,
     border: 1px solid #ddd;
   }
   #root .content .header .download {
-    padding: 0;
+    padding: 0 5px 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

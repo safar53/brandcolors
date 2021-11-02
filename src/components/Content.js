@@ -10,14 +10,6 @@ const Content = () => {
 
     const { brands, selectedBrands } = useContext(MainContext)
 
-    const rowRenderer = ({ key, index, style, isScrolling, isVisible }) => {
-        return (
-            <div style={style} key={key}>
-                <Brand brand={brands[index]} />
-            </div>
-        )
-    }
-
     return (
         <main className="content">
             <header className="header">

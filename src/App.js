@@ -35,7 +35,7 @@ function App() {
   }, [copied])
 
   useEffect(() => {
-    setBrands(brandsArray.filter(brand => brand.title.toLowerCase().includes(search)))
+    setBrands(brandsArray.filter(brand => brand.title.toLowerCase().includes(search.toLocaleLowerCase())))
   }, [search])
 
   useEffect(() => {
