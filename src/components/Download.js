@@ -30,7 +30,7 @@ const Download = () => {
                     selectedBrands.map(slug => {
                         let brand = brands.find(brand => brand.slug === slug)
                         brand.colors.map((color, key) => {
-                            output += `\$${slug}-${key}:#${color};\n`
+                            output += `--$${slug}-${key}:#${color};\n`
                         })
                     })
                     break;
