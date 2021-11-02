@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/brandcolors/static/css/main.dacc2af6.chunk.css",
-    "main.js": "/brandcolors/static/js/main.bbd7ab98.chunk.js",
-    "main.js.map": "/brandcolors/static/js/main.bbd7ab98.chunk.js.map",
+    "main.js": "/brandcolors/static/js/main.98f32f78.chunk.js",
+    "main.js.map": "/brandcolors/static/js/main.98f32f78.chunk.js.map",
     "runtime-main.js": "/brandcolors/static/js/runtime-main.c6c6378d.js",
     "runtime-main.js.map": "/brandcolors/static/js/runtime-main.c6c6378d.js.map",
     "static/js/2.2d783e8f.chunk.js": "/brandcolors/static/js/2.2d783e8f.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.c6c6378d.js",
     "static/js/2.2d783e8f.chunk.js",
     "static/css/main.dacc2af6.chunk.css",
-    "static/js/main.bbd7ab98.chunk.js"
+    "static/js/main.98f32f78.chunk.js"
   ]
 }
