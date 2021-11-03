@@ -34,48 +34,4 @@ body,
 
 @import "sidebar/sidebar";
 @import "content/content";
-
-@media (max-width: 1000px) {
-  #root {
-    flex-direction: column;
-    .sidebar {
-      width: 100%;
-      min-width: 100%;
-      border-right: none;
-      border-bottom: 1px solid #ccc;
-      padding: 15px;
-      .logo {
-        margin-bottom: 15px;
-      }
-      .description {
-        font-size: 15px;
-      }
-    }
-    .content {
-      .header {
-        height: initial;
-        .search {
-          display: flex;
-          justify-content: center;
-          .icon {
-            padding-left: 5px;
-            width: unset;
-          }
-          input {
-            padding: 5px 10px 5px 30px;
-            margin: 5px 2px;
-            border: 1px solid #ddd;
-          }
-        }
-        .download {
-          padding: 0 5px 0 0;
-          display: flex;
-          justify-content: center;
-        }
-      }
-      .brands .brand.selected .brand-colors span {
-        text-indent: -9999px;
-      }
-    }
-  }
-}
+@import "responsive"

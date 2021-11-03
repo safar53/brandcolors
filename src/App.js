@@ -55,10 +55,10 @@ function App() {
     <>
       <MainContext.Provider value={data}>
         {copied && <Copied color={copied} />}
-        <Sidebar />
         <Router>
+          <Sidebar />
           <Switch>
-          <Route path="/" exact>
+            <Route path="/" exact>
               <Content />
             </Route>
             <Route path="/brandcolors" exact>

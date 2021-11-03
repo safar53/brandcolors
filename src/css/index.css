@@ -47,6 +47,10 @@ body,
   font-size: 30px;
 }
 
+.sidebar .logo a:visited {
+  color: #000;
+}
+
 .sidebar .description {
   font-size: 18px;
   line-height: 1.7;
@@ -173,7 +177,7 @@ body,
   width: 100%;
   height: 100%;
   font-size: 16px;
-  padding: 0 20px 0 60px;
+  padding: 0 60px;
 }
 
 .content .header .download {
@@ -276,10 +280,12 @@ body,
   background-color: #fff;
   padding: 15px;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 
 .content .brands .brand.selected {
   border-color: red;
+  overflow: hidden;
 }
 
 .content .brands .brand.selected .brand-colors span {
@@ -368,7 +374,7 @@ body,
     width: unset;
   }
   #root .content .header .search input {
-    padding: 5px 30px;
+    padding: 5px 10px 5px 30px;
     margin: 5px 2px;
     border: 1px solid #ddd;
   }

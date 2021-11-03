@@ -1,21 +1,32 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Modal from "react-modal";
+import MainContext from "../MainContext";
 import { GrClose } from "react-icons/gr";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const toggleModal = () => {
     setModalIsOpen(!modalIsOpen);
   };
+  const { setSelectedBrands, setSearch } = useContext(MainContext)
 
-  
+  const backHomepage = () => {
+    setSelectedBrands([])
+    setSearch('')
+}
+
+
   return (
     <>
       <aside className="sidebar">
         <div className="logo">
-          <a>
-            Brand<b>Colors</b>
-          </a>
+          <Link to="/brandcolors" onClick={backHomepage}>
+            <a>
+              Brand<b>Colors</b>
+            </a>
+          </Link>
+
         </div>
         <div className="description">
           The biggest collection of official brand color codes around. Curated

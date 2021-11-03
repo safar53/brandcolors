@@ -13,6 +13,10 @@
   font-size: 30px;
 }
 
+.sidebar .logo a:visited {
+  color: #000;
+}
+
 .sidebar .description {
   font-size: 18px;
   line-height: 1.7;
