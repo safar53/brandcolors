@@ -9,7 +9,7 @@ const Search = () => {
             <div className="icon">
                 <GrSearch />
             </div>
-            <input type="text" onChange={(e) => setSearch(e.target.value)} placeholder="Search Brands"/>            
+            <input type="text" onChange={(e) => setSearch(e.target.value)} placeholder="Search"/>            
         </div>
     )
 }
