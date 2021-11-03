@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/brandcolors/static/css/main.656ebe91.chunk.css",
-    "main.js": "/brandcolors/static/js/main.0f44c78b.chunk.js",
-    "main.js.map": "/brandcolors/static/js/main.0f44c78b.chunk.js.map",
+    "main.css": "/brandcolors/static/css/main.00124f79.chunk.css",
+    "main.js": "/brandcolors/static/js/main.740b46ad.chunk.js",
+    "main.js.map": "/brandcolors/static/js/main.740b46ad.chunk.js.map",
     "runtime-main.js": "/brandcolors/static/js/runtime-main.c6c6378d.js",
     "runtime-main.js.map": "/brandcolors/static/js/runtime-main.c6c6378d.js.map",
-    "static/js/2.2d783e8f.chunk.js": "/brandcolors/static/js/2.2d783e8f.chunk.js",
-    "static/js/2.2d783e8f.chunk.js.map": "/brandcolors/static/js/2.2d783e8f.chunk.js.map",
+    "static/js/2.3f55de87.chunk.js": "/brandcolors/static/js/2.3f55de87.chunk.js",
+    "static/js/2.3f55de87.chunk.js.map": "/brandcolors/static/js/2.3f55de87.chunk.js.map",
     "index.html": "/brandcolors/index.html",
-    "static/css/main.656ebe91.chunk.css.map": "/brandcolors/static/css/main.656ebe91.chunk.css.map",
-    "static/js/2.2d783e8f.chunk.js.LICENSE.txt": "/brandcolors/static/js/2.2d783e8f.chunk.js.LICENSE.txt"
+    "static/css/main.00124f79.chunk.css.map": "/brandcolors/static/css/main.00124f79.chunk.css.map",
+    "static/js/2.3f55de87.chunk.js.LICENSE.txt": "/brandcolors/static/js/2.3f55de87.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c6c6378d.js",
-    "static/js/2.2d783e8f.chunk.js",
-    "static/css/main.656ebe91.chunk.css",
-    "static/js/main.0f44c78b.chunk.js"
+    "static/js/2.3f55de87.chunk.js",
+    "static/css/main.00124f79.chunk.css",
+    "static/js/main.740b46ad.chunk.js"
   ]
 }
